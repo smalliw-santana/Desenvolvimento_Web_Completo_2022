@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <title>JavaScript</title>
+
+  <script>
+
+    //DOCUMENTAÇÃO
+    //https://www.w3schools.com/jsref/jsref_obj_date.asp
+
+    var data = new Date() // nova instancia do objeto date - novo obejeto de data criado e atrobuido a uma variavel.   
+
+    //adicionar  / remover dias
+    document.write(data.toString())
+    data.setDate(data.getDate() + 10) // adiciona ou remove um dia
+    document.write('<hr/>')
+    document.write(data.toString())
+
+    document.write('<br/>')
+
+    //adicionar  / remover meses
+    document.write(data.toString())
+    data.setMonth(data.getMonth() + 3) // adiciona ou remove um mês
+    document.write('<hr/>')
+    document.write(data.toString())
+
+    document.write('<br/>')
+
+    //adicionar  / remover anos
+    document.write(data.toString())
+    data.setFullYear(data.getFullYear() + 3) // adiciona ou remove um anos
+    document.write('<hr/>')
+    document.write(data.toString())
+
+    document.write('<br/><br/><br/><br/> * CONTINUAÇÃO *<br/>')
+
+    var data1 = new Date(2017, 0, 15)
+    var data2 = new Date(2017, 1, 23)
+
+    document.write(data1.toString())
+    document.write('<hr/>')
+    document.write(data2.toString())
+
+    //converter datas para algo que possamos calcular
+    document.write('<br/><br/><hr/>')
+
+    document.write(data1.getTime())
+    document.write('<hr/>')
+    document.write(data2.getTime())
+    // 1 de Janeiro de 1970 - marco zero
+
+    document.write('<br/><br/><hr/>')
+    //econtrar a quantidade de milissegundos entre data1 e data2
+
+    var milissegundos_entre_datas = Math.abs(data1.getTime() - data2.getTime())
+    document.write(milissegundos_entre_datas) //Math.abs = retorna um valor absoluto , ou seja converte para um valor positivo
+
+    // 1 dia tem 24 hs, 
+    // cada hora tem 60 minutos, 
+    // cada minuto tem 60 segundos e 
+    // cada segundo tem 1000 milissegundos
+    // então quantos milissegundos existe em um dia?
+
+    var milissegundos_por_dia = (1 * 24 * 60 * 60 * 1000)
+    document.write(milissegundos_por_dia)
+
+    document.write('<br/><br/><hr/>')
+
+    document.write('a diferença entre data1 e data2 é de ' + Math.ceil(milissegundos_entre_datas / milissegundos_por_dia) + ' dias.')
+
+
+
+  </script>
+
+</head>
+
+<body style="padding: 20px; font-size: 20px;">
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

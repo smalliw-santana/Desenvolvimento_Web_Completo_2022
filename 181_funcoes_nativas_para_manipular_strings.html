@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+ <title>JavaScript</title>
+
+ <script>
+
+//DOCUMENTAÇÃO
+//https://www.w3schools.com/jsref/jsref_obj_string.asp
+
+
+  var nome = ' Jorge Sant Ana '
+
+  //propriedade lenght
+  document.write(nome.length + '<hr/>') //propriendade - recupera a quantidade de caracter
+  document.write(nome.charAt(2) + '<hr/>') //função - recupera o indice
+  document.write(nome.indexOf('S') + '<hr/>') //metodo - retorna a primeira ocerrência posição do caracter informado
+  document.write(nome.replace('Sant Ana', 'Moraes') + '<hr/>') //metodo - substitui um determinado valor informado
+  document.write(nome.substr(1, 7) + '<hr/>') //metodo - recupera apartir da posição inicial 6, o valor 4 de caractere.
+  document.write(nome.toLocaleLowerCase() + '<hr/>') //converte para caixa baixa(minusculo).
+  document.write(nome.toUpperCase() + '<hr/>') //converte para caixa alta(maiusculo).
+  document.write('-' + nome.trim() + '-') //remove os espaços em branco das estremidades de uma string.
+
+
+
+ </script>
+
+</head>
+
+<body style="padding: 20px; font-size: 20px;">
+
+
+
+
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+- COMENTARIOS -
+// comentario de uma linha
+
+/*
+	comentario de multiplas linhas
+	comentario de multiplas linhas
+	comentario de multiplas linhas
+*/
+
+
+
+- VARIAVEIS -
+- string (letras)
+- number (numero) int=1 / float= -0.75
+- boolean (verdadeiro/falso)
+
+
+
+- REGRAS PARA DECLARAÇÃO -
+-não pode ser iniciadas com numeros, apenas com letras
+-não pode ser iniciadas com carcteres especiais como 'ç', '^', '~'
+-não pode ser iguais as palavras reservadas da linguagem. 
+
+
+
+- OPERADORES DE COMPARAÇÃO -
+igual (==)
+idêntico (===)
+diferente (!=)
+não idêntico (!==)
+menor (<)
+maior (>)
+menor igual (<=)
+maior igual (>=)
+
+
+
+- CASTING DE TIPOS -
+parseInt()   (Ex: paeseInt.variavel)
+parseFloat() (Ex: parseFloat.variavel)
+toString()   (Ex: variavel.toString())
+
+
+
+- OPERADORES LOGICOS -
+E ( && )      verdadeiro se todas as expressões forem verdadeiras.
+OU ( || )     verdadeiro se pelo menos uma expressão for verdadeira.
+NEGAÇÂO ( ! ) inverte o resultado da expressão de comparação. 
+
+
+
+- OPERADOR TERNARIO -
+var resultado = (condição) ? 'verdaeiro' : 'falso'
+
+
+
+- SWITCH -
+var opcao = 2
+switch (opcao) {
+	case 1:
+		//trecho de codigo que sera execultado
+	break
+	case 2:
+			//trecho de codigo que sera execultado
+	break
+	default:
+			//trecho de codigo que sera execultado	
+}
+* ao final de cada CASE deve-se usar o (BREAK), 
+  se não o proximo case será exeultado também.
+* o (DEFAULT) é opcional, funcionando como se fosse o (ELSE, do comando IF)
+  porem caso haja alguma opção invalida, não será execultado nada.
+
+
+
+- OPERADORES ARITMETICOS -
+Adição        ( + ) soma valores (também usado para concatenação)
+Subtração     ( - ) Diferença entre valores
+multiplicação ( * ) produto dos valore
+Divisão       ( / ) Quociente dos valores
+Módulo        ( % ) Resto existente em uma operação de divisão
+Incremento    ( ++) Pré/pós incremento
+Decremento    ( --) Pré/pós decremento
+
+
+ * a precedencia sempre é execultada por primeiro o que estiver dentro de parenteses()
+
+1 - Multiplicação  
+2 - divisão
+3 - soma e Subtração (será feito primeiro o valor da esquerda)
+
+
+- FUNÇÕES -
+  //void -> realiza o processamento e não fornece nenhum tipo de retorno
+  //return -> retorna um paramentro que pode ser utilizado dentro da logica do script
+		
+		ex: function calcularAreaTerreno(largura, comprimento) {
+
+   //lógica
+   var area = largura * comprimento
+   return area
+  }
+
+	ao criar uma funação vc deve xhamar a função pelo nome da função + ()
+		EXEMPLO
+		calcularAreaTerreno()
+
+		// o JS descosidera os paramentros adicionais
+
+
+- ESCOPO DE VARIAVEIS - 
+  1 - global
+		2 - função
+		3 - bloco
+
+		* as funções tem acesso as variaves de escopo global
+	
+		* o JS consegue atribuir associar a uma varia não somente uma estring ou numeros, 
+			 mas também a uma funação
+
+		* tecnica de (wapper) cria as funções dentro de variaveis.
+						
+
+- DATA -
+var data = new Date()
+data.getDate(data) - dia
+data.getMonth(data) - mes
+data.getFullYear(data) - ano
+
+* get - recuperam valores
+* set - setam valores
+* abs - retorna um valor absoluto de um número
+
+
+- DOM - Manipulando estilos -
+document.getElementById('quadrado').style.background = corDeFundo
+
+se utiliza o padrão camelCase
+EXEMPLOS:
+style.backgroundImage
+style.backgroundColor
+style.paddingBottom
+
+
+
+

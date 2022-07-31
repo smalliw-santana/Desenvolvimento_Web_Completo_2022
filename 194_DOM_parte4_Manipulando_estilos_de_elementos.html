@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS only -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- adiciona o icone no titulo da pagina -->
+  <link rel="shortcut icon" href="img/js.webp" type="image/x-icon">
+  <title>JavaScript</title>
+
+  <script>
+   function modificaEstilo(corDeFundo, l, a) {
+    document.getElementById('quadrado').style.background = corDeFundo
+    document.getElementById('quadrado').style.width = l
+    document.getElementById('quadrado').style.height = a
+   }
+  </script>
+
+
+
+</head>
+
+<body class="m-3">
+
+  <h3 class="lead display-4 mb-4">Manipulando estilos</h3>
+  <button onclick="modificaEstilo('#FF0000', '200px', '400px')" class="btn btn-danger bi bi-activity" type="button">Vermelho</button>
+  <button onclick="modificaEstilo('#00FF00', '50px', '400px')" class="btn btn-success" type="button">Verde</button>
+  <button onclick="modificaEstilo('#0000FF', '150px', '200px')" class="btn btn-primary" type="button">Azul</button>
+
+  <hr>
+
+  <div style="border: 1px #000; border-radius: 5px; width: 100px; height: 100px;" id="quadrado"></div>
+  
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

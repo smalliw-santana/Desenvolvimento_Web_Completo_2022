@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+ <title>JavaScript</title>
+
+ <script>
+
+  //recebe os parâmetros 
+  var nome = prompt('Digite seu nome: ')
+  var altura = prompt('Informe sua altura em centimetros: ')
+  var peso = prompt('Informe o seu peso: ')
+
+  //converte as cadeias de caracteres para dados do tipo float 
+  altura = parseFloat(altura)
+  peso = parseFloat(peso)
+  
+  //abaixo é feito a conversão da altura de centímetros para metros 
+  altura = altura / 100
+
+  //realiza o cálculo de imc 
+  var imc = peso / (altura * altura)
+
+  //testes condicionais para identificar a classificação do peso com base no imc 
+  var classificacao ='';
+
+  if (imc < 16) {
+   classificacao = 'BAIXO PESO MUITO GRAVE.'
+  }
+  else if (imc >= 16 && imc <= 16.99) {
+   classificacao = 'BAIXO PESO GRAVE.'
+  }
+  else if (imc >= 17 && imc <= 18.49) {
+   classificacao = 'BAIXO PESO.'
+  }
+  else if (imc >= 18.50 && imc <= 24.99) {
+   classificacao = 'PESO NORMAL.'
+  }
+  else if (imc >= 25 && imc <= 29.99) {
+   classificacao = 'SOBRE PESO.'
+  }
+  else if (imc >= 30 && imc <= 34.99) {
+   classificacao = 'OBESIDADE GRAU I.'
+  }
+  else if (imc >= 35 && imc <= 39.99) {
+   classificacao = 'OBESIDADE GRAU II.'
+  }
+  else {
+   classificacao = 'OBESIDADE GRAU III.'
+  }
+
+  document.write(nome + ', possui índice de massa corporal igual a ' + imc + ', sendo classificado como ' + classificacao)
+
+
+
+ </script>
+
+</head>
+
+<body style="padding: 20px; font-size: 20px;">
+
+
+
+
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
