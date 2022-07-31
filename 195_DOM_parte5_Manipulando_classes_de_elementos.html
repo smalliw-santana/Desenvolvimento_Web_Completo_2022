@@ -21,12 +21,19 @@
    }
 
    .estilo2{
-
+    background: #0044ff;
+    color: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 2rem;
    }
 
   </style>
 
   <script>
+    function modificaClasse(){
+      document.getElementById('mensagem').className = 'estilo2'
+    }
   
   </script>
 
@@ -40,7 +47,7 @@
 
  <hr>
 
- <button type="button">Aplicar classe</button>
+ <button onclick="modificaClasse()" type="button" class="btn btn-warning">Aplicar classe</button>
   
   
 
