@@ -14,15 +14,17 @@
   <title>JavaScript</title>  
 
   <script>
-   function amarelo(){
+   function foco(){
     document.getElementById('cor').style.background = 'yellow'
+    document.getElementById('cor').style.borderRadius = '5px'
+    document.getElementById('cor').style.border = '1px solid red'
    }
 
-   function teste(){
+   function perdeFoco(){
     document.getElementById('cor').style.background = ''
    }
-  
-  
+
+
   </script>
 
 
@@ -31,7 +33,7 @@
 
 <body class="m-3">
 
- <input onfocus="amarelo()" onblur="teste()" class="mudaDeCor" type="text" id="cor">
+ <input onmouseover="foco()" onmouseout="perdeFoco()" onkeyup="validador()" type="text" id="cor">
   
   
 
