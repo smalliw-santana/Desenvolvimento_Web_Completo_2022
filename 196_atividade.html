@@ -14,6 +14,13 @@
   <title>JavaScript</title>  
 
   <script>
+   function amarelo(){
+    document.getElementById('cor').style.background = 'yellow'
+   }
+
+   function teste(){
+    document.getElementById('cor').style.background = ''
+   }
   
   
   </script>
@@ -24,7 +31,7 @@
 
 <body class="m-3">
 
- 
+ <input onfocus="amarelo()" onblur="teste()" class="mudaDeCor" type="text" id="cor">
   
   
 
