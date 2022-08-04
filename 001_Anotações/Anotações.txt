@@ -141,6 +141,8 @@ style.backgroundImage
 style.backgroundColor
 style.paddingBottom
 
+eval - interpreta como uma intrução js,
+
 
 
 
