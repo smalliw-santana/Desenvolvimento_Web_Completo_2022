@@ -54,7 +54,7 @@
           <br />
 
           <div class="calculadora">
-            <input type="text" class="form-control resultado" placeholder="0" disabled="disabled" />
+            <input id="resultado" type="text" class="form-control resultado" placeholder="0" disabled="disabled" />
             
             <div class="row">
               <button onclick="calcular('acao', 'c')" type="button" class="btn btn-dark btn-lg clear font-weight-light">C</button>
@@ -87,7 +87,6 @@
               <button onclick="calcular('valor', 0)" type="button" class="btn btn-dark zero btn-lg font-weight-light">0</button>
               <button onclick="calcular('acao', '.')"type="button" class="btn btn-dark btn-lg font-weight-light">.</button>
             </div>
-
           </div>
         </div>
       </div>
@@ -95,9 +94,20 @@
     
     <script>
       function calcular (tipo, valor){
-        console.log(tipo, valor);
-       
-      
+        if( tipo === 'acao'){
+          if(valor === 'c'){
+            //Limpa o visor (id resultado)
+            document.getElementById('resultado').value = ''
+          }
+
+          if(valor === '+' || valor === '-' || valor === '*' || valor === '/' || valor === '.'){
+            document.getElementById('resultado').value += valor
+          }
+        }
+        else if(tipo === 'valor'){
+          document.getElementById('resultado').value += valor
+        }  
+              
       }
 
       
