@@ -144,6 +144,11 @@ style.paddingBottom
 eval - interpreta como uma intrução js,
 eval(document.getElementById('resultado').value)
 
+-- ARRAY --
+
+var lista_frutras = Array()
+var lista_frutras = []
+
 
 
 
