@@ -142,6 +142,7 @@ style.backgroundColor
 style.paddingBottom
 
 eval - interpreta como uma intrução js,
+eval(document.getElementById('resultado').value)
 
 
 
