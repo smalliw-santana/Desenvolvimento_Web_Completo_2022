@@ -146,9 +146,23 @@ eval(document.getElementById('resultado').value)
 
 
 -- ARRAY --
-
+formas de manipular um indice de um array
 var lista_frutras = Array()
+lista_frutas [0] = 'Banana'
+lista_frutas [1] = 'Maça'
+lista_frutas [2] = 'Morango'
+lista_frutas [3] = 'Uva'
+
 var lista_frutras = []
+lista_frutas [0] = 'Banana'
+lista_frutas [1] = 'Maça'
+lista_frutas [2] = 'Morango'
+lista_frutas [3] = 'Uva'
+
+
+formas onde não conseguimos manipular um indice de um array
+var lista_frutas = Array('Banana', 'Maça', 'Morango', 'Uva', 100)
+
 
 
 
