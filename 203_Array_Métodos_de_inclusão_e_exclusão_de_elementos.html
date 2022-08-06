@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <!-- adiciona o icone no titulo da pagina -->
+ <link rel="shortcut icon" href="img/js.webp" type="image/x-icon">
+ <title>JavaScript</title>
+
+ <script>
+  var lista_coisas = Array()
+
+  lista_coisas['frutas'] = Array()
+  lista_coisas['pessoas'] = []
+
+  // inserindo em frutas
+  lista_coisas['frutas'].push('Banana')
+  lista_coisas['frutas'].push('Maçã')
+  lista_coisas['frutas'].push('Uva')
+
+  //inserindo em pessoas
+  lista_coisas['pessoas'].push('Maria')
+  lista_coisas['pessoas'].push('João')
+  lista_coisas['pessoas'].push('Pedro')
+
+  lista_coisas['frutas'].shift()
+
+  
+ document.write(lista_coisas['frutas'] + '<br>');
+ document.write(lista_coisas['pessoas']);
+
+
+
+  // incluir elemento no final do array
+  //lista_frutas.push('Uva')
+
+  // incluir elemento no inicio do array
+  // lista_frutas.unshift('Uva')
+
+  //excluir elemento no final do array
+  //lista_frutas.pop() // não precisa passar parametro
+
+  //excluir elemento no inicio do array
+  //lista_frutas.shift() // não precisa passar parametro
+
+
+  
+
+ </script>
+
+
+
+</head>
+
+<body class="m-3">
+
+
+
+
+
+</body>
+
+</html>

@@ -163,7 +163,20 @@ lista_frutas [3] = 'Uva'
 formas onde não conseguimos manipular um indice de um array
 var lista_frutas = Array('Banana', 'Maça', 'Morango', 'Uva', 100)
 
+- INCLUSÃO
+incluir elemento no final do array
+lista_frutas.push('Uva')
 
+incluir elemento no inicio do array
+lista_frutas.unshift('Uva')
+
+
+- EXCLUSÃO
+excluir elemento no final do array
+lista_frutas.pop() // não precisa passar parametro
+
+exluir elemento no inicio do array
+lista_frutas.shift() // não precisa passar parametro
 
 
 
