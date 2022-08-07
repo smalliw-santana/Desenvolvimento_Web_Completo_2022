@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <!-- adiciona o icone no titulo da pagina -->
+ <link rel="shortcut icon" href="img/js.webp" type="image/x-icon">
+ <title>JavaScript</title>
+ <style>
+  input {
+   margin-top: 20px;
+  }
+ </style>
+
+ <script>
+  var objetos = Array('cadeira', 'Impressora', 'Garfo')
+
+
+  function validador() {
+   var valor = document.getElementById('objeto').value
+
+   if (valor === '') {
+    alert('vazio')
+   }
+   else {
+    console.log(valor)
+   }
+
+   valor = document.getElementById('objeto').value = ''
+
+  }
+
+
+ </script>
+
+
+
+</head>
+
+<body class="m-3">
+
+ <input type="text" name="" id="objeto">
+ <button onclick="validador()">Adicionar</button>
+ <button>Ordenar</button>
+
+
+
+</body>
+
+</html>

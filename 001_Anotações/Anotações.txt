@@ -179,4 +179,16 @@ exluir elemento no inicio do array
 lista_frutas.shift() // não precisa passar parametro
 
 
+pesquisa dentro de um array -   
+lista_frutas.indexOf('Morango')
+
+ordenação de array - alfanumerico
+lista_frutas.sort()
+
+ordenação numericas
+lista_numeros.sort() 
+
+
+
+
 
