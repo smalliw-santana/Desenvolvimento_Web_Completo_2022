@@ -11,7 +11,7 @@
 
  <!-- adiciona o icone no titulo da pagina -->
  <link rel="shortcut icon" href="img/js.webp" type="image/x-icon">
- <title>JavaScript</title>
+ <title>Desenvolvimento Web</title>
  <style>
   input {
    margin-top: 20px;
