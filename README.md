@@ -22,7 +22,7 @@
 
 <body class="m-3">
 
- <h1>DESENVOLVIMENTO WEB</h1>
+ <h1 class="display-4">DESENVOLVIMENTO WEB</h1>
 
 
 <!-- JavaScript Bundle with Popper -->
