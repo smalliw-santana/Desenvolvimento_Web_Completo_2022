@@ -1,7 +1,3 @@
-#DesenvolvimentoWebCompleto2022
+<h1> Curso de Desenvolvimento Web </h1>
 
-JS - Desenvolvimento Web Completo 2022
-
-<h1> teste </h1>
- 
 
