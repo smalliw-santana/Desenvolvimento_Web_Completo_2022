@@ -17,16 +17,16 @@
    margin-top: 20px;
   }
  </style>
+
 </head>
 
-<h1># Curso de Desenvolvimento Web</h1>
-<h4> - HTML5</h4>
-<h4> - CSS</h4>
-<h4> - BOOTSTRAP</h4>
+<body class="m-3">
 
-<input type="text" name="" id="objeto">
- <button onclick="validador()">Adicionar</button>
- <button>Ordenar</button>
+ <h1>DESENVOLVIMENTO WEB</h1>
 
 
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
 
+</html>
