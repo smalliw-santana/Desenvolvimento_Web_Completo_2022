@@ -10,23 +10,22 @@
  <script>
   var lista_coisas = Array()
 
-  var frutas =
-   lista_coisas['frutas'] = Array()
+  lista_coisas['frutas'] = Array()
   lista_coisas['frutas'][0] = 'Maçã'
   lista_coisas['frutas'][1] = 'Manga'
 
-  var pessoas =
-   lista_coisas['pessoas'] = Array()
+  lista_coisas['pessoas'] = Array()
   lista_coisas['pessoas'][0] = 'Maria'
   lista_coisas['pessoas'][1] = 'João'
 
-  lista_coisas['frutas'].push('Morango')
-  lista_coisas['pessoas'].push('Lucas')
-  lista_coisas['pessoas'].push('Batista')
+  // lista_coisas['frutas'].pop('Morango')
+  // lista_coisas['pessoas'].push('Lucas')
+  // lista_coisas['pessoas'].push('Batista')
+ 
+  lista_coisas['pessoas'].shift()
+  // console.log(pessoas.sort());
 
-  console.log(pessoas.sort());
-
-
+  console.log(lista_coisas['pessoas']);
 
  </script>
 </head>
