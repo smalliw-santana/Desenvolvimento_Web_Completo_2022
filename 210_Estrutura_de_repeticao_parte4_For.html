@@ -14,42 +14,24 @@ integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLP
  <!-- adiciona o icone no titulo da pagina -->
  <link rel="shortcut icon" href="img/js.webp" type="image/x-icon">
  <title>JavaScript</title>
- <style>
-  input {
-   margin-top: 20px;
-  }
- </style>
+ 
 
 <script>
- 
- // while - enquanto
 
- var x = 1
- document.write('<h1 class="text-uppercase">while com break</h1>')
- document.write('inicio <br/>')
- while(x <= 10){  
-    document.write(x + '<br>')
-    if(x === 5){
-     break
-    }
-    x++
- }
- document.write('Fim <br/><hr>')
+// while (condition) { 
+// }
+
+// do { 
+// } while (condition);
 
 
+for(var x = 10; x >= 0; x -= 4){
+ document.write(x + '<br/>')
 
- var x2 = 1
- document.write('<h1 class="text-uppercase">while com continue</h1>')
- document.write('inicio <br/>')
- while(x2 <= 10){  
-    x2++          // o incremento deve antes do continue
-    if(x2 === 5){ // o valor 5 não será impresso
-     continue
-    }
-   document.write(x2 + '<br/>')
- }
- document.write('Fim <br/>')
+ // break - pode se utilizar 
+ // continue - pode se utilizar
 
+}
 
 
 

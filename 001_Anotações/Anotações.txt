@@ -191,4 +191,38 @@ lista_numeros.sort()
 
 
 
+-- ESTRUTURAS DE REPETIÇÃO --
+while (condition) { // enquanto
+}
+
+pode se utilizar o break
+var x = 1
+ while(x <= 10){  
+    if(x === 5){
+     break
+    }
+    x++
+ }
+
+***************************************
+pode se utilizar o continue	
+	var x2 = 1
+ while(x2 <= 10){  
+    x2++
+    if(x2 === 5){
+     continue
+    }
+ }
+
+*****************************************
+do {
+} while (condition);
+
+*****************************************
+for(var x = 10; x >= 0; x--){ 
+}
+pode se decrementar um quantidades tambem
+
+
+
 
