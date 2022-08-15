@@ -2,31 +2,50 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- CSS only -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+ <!-- adiciona o icone no titulo da pagina -->
+ <link rel="shortcut icon" href="img/js.webp" type="image/x-icon">
+ <title>JavaScript</title>
 
-  <!-- adiciona o icone no titulo da pagina -->
-  <link rel="shortcut icon" href="img/js.webp" type="image/x-icon">
-  <title>JavaScript</title>
+ <script>
 
-  <script>
+  // var listaConvidados = ['Jorge', 'Jamilton', 'José', 'Ana', 'Maria']
 
-   // var listaConvidados = ['Jorge', 'Jamilton', 'José', 'Ana', 'Maria']
+  var listaFuncionarios = Array()
 
-   var listaFuncionarios = ['Viviane', 'Rosêngela', 'Miguel', 'Lucas', 'Fernanda']
+  listaFuncionarios['x'] = 'Viviane' 
+  listaFuncionarios[false] = 'Rosângela' 
+  listaFuncionarios[3] = 'Miguel' 
+  listaFuncionarios[27] = 'Lucas' 
+  listaFuncionarios[-12] = 'Fernanda' 
 
-   listaFuncionarios.forEach(function(valor, indece, array){
-    //logica
-    
 
-   }) // primeiro se recupera a listaFuncionario 
-   
+  var f = function (valor, indice) {
+   console.log(valor, indice);
+  }
 
-  </script>
+ listaFuncionarios.forEach(f)
+
+  // console.log(listaFuncionarios);
+  // document.write(listaFuncionarios[3])
+
+  // listaFuncionarios.forEach(function (valor, indice, array) {
+  //  //logica
+  //  console.log('Indice ' + indice +  ' | valor: ' + valor);
+
+  //  if(valor === 'Lucas'){
+  //   array[indice] = 'um novo valor'
+  //  }
+
+  // }) // primeiro se recupera a listaFuncionario
+
+  // console.log(listaFuncionarios);
+  // document.write('<br/>' + listaFuncionarios[3])
+
+ </script>
 
 
 
@@ -37,10 +56,6 @@
 
 
 
-
-
-  <!-- JavaScript Bundle with Popper -->
-  <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

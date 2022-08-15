@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <!-- adiciona o icone no titulo da pagina -->
+ <link rel="shortcut icon" href="img/js.webp" type="image/x-icon">
+ <title>JavaScript</title>
+
+ <script>
+//Questão 1
+document.write('<h1>Atividade 01 </h1><hr>')
+var lista_frutas = Array();
+lista_frutas[0] = 'Banana';
+lista_frutas[1] = 'Maçã';
+lista_frutas[2] = 'Morango';
+lista_frutas[3] = 'Uva';
+
+for (var i = 0; i < lista_frutas.length; i++) {
+document.write(lista_frutas[i] + '<br>');
+console.log(lista_frutas[i])
+} 
+
+document.write('<h1>Atividade 02 </h1><hr>')
+
+//Questão 2
+var x = 1;
+var y = 1;
+
+while (x <= 10) {
+y = 1;
+while (y <= 10) {
+console.log(x + ' x ' + y + ' = ' + x * y);
+document.write(x + ' x ' + y + ' = ' + x * y + '<br>');
+y++;
+}
+console.log("\n");
+document.write("<hr/>");
+x++;
+}
+
+
+
+ </script>
+
+
+
+</head>
+
+<body class="m-3">
+
+
+
+
+</body>
+
+</html>
