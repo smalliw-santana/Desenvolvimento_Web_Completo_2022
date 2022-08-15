@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS only -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- adiciona o icone no titulo da pagina -->
+  <link rel="shortcut icon" href="img/js.webp" type="image/x-icon">
+  <title>JavaScript</title>
+
+  <script>
+
+   // var listaConvidados = ['Jorge', 'Jamilton', 'José', 'Ana', 'Maria']
+
+   var listaConvidados = Array()
+
+   listaConvidados['a'] = 'Jorge'
+   listaConvidados[10] = 'Jamilton'
+   listaConvidados['zebra'] = 'José'
+   listaConvidados[-1] = 'Ana'
+   listaConvidados[true] = 'Maria'
+
+   console.log(listaConvidados);
+
+   for(var x in listaConvidados ){ // variavel x recebe o valor dos indices de listaconvidados
+    console.log('Indice ' + x + ' Valor ' + listaConvidados[x]);
+   }
+   
+
+  </script>
+
+
+
+</head>
+
+<body class="m-3">
+
+
+
+
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
