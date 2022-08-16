@@ -19,10 +19,14 @@ integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLP
 <script>
 
 function soma(){
- console.log(arguments);
+ var resultado = 0
+ for(var i in arguments){
+  resultado += arguments[i]
+ } 
+ return resultado
 }
 
-console.log(soma());
+console.log(soma(7, 5, 3.2, 0.8));
 
 
  </script>
