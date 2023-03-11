@@ -26,7 +26,17 @@ function soma(){
  return resultado
 }
 
-console.log(soma(7, 5, 3.2, 0.8));
+function teste(){
+ var retorna ='' 
+ for(var i in arguments){
+  retorna += arguments[i]
+ }
+ return retorna
+}
+
+
+console.log(soma(7, 5, 3.2, 0.8, ' texto'));
+console.log(teste('Willams', ' Silva', ' Santana'));
 
 
  </script>

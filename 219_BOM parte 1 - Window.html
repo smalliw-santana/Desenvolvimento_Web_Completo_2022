@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+ <!-- adiciona o icone no titulo da pagina -->
+ <link rel="shortcut icon" href="img/js.webp" type="image/x-icon">
+ <title>JavaScript</title>
+
+
+<script>
+
+ var janela
+
+function abrirPopUp() {
+ janela = window.open('', 'nova_janela', 'width=200', 'heigth=100');
+}
+
+function fecharPopUp(){
+ janela.close()
+}
+
+
+ </script>
+
+
+
+</head>
+
+<body class="m-3">
+
+<button class="btn btn-danger" onclick="abrirPopUp()">Abrir Janela</button>
+<button class="btn btn-primary" onclick="fecharPopUp()">Fechar Janela</button>
+<button class="btn btn-success" onclick="window.print()">Imprimir pagína</button>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+ <!-- adiciona o icone no titulo da pagina -->
+ <link rel="shortcut icon" href="img/js.webp" type="image/x-icon">
+ <title>JavaScript</title>
+
+
+<script>
+
+
+
+//Netflix
+var video = Array()
+
+video[1] = Array()
+video[1]['nome'] = 'Fullmetal Alchemist'
+video[1]['categoria'] = 'Anime' 
+  
+function getVideo(video){
+
+ try{
+  //logica
+  //http
+  console.log(video[0]['nome']);
+ } 
+
+ catch(erro){
+  tratarErro(erro);
+  console.log('Agora sim podemos tratar esse erro');
+  throw new Error('Houve um erro, mas não se preocupe, estamos trabalhando nisso agora!!!')
+ }
+ 
+ finally{
+  console.log('Sempre passa por aqui (try / catch');
+ }
+ 
+ 
+ console.log('A aplicação não morreu!');
+
+}
+
+function tratarErro(e) {
+ //Logica para registrar o erro no servidor
+ console.log(e);
+}
+
+getVideo(video)
+
+ </script>
+
+
+
+</head>
+
+<body class="m-3">
+
+
+
+</body>
+
+</html>
