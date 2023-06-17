@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+
+ <script>
+
+  // modelo do objeto
+  // class ContaBancaria {
+
+  //  constructor() {
+  //   this.agencia = 1075
+  //   this.numeroConta = 8351125
+  //   this.saldo = 50
+  //   this.limite = 450
+  //  }
+
+  //  //metodos
+  //  depositar(valorDeposito) {
+  //   this.saldo += valorDeposito
+  //  }
+
+  //  sacar(valorSaque) {
+  //   this.saldo -= valorSaque
+  //  }
+
+  //  consultarSaldo() {
+  //   return this.saldo
+  //  }
+
+  // }
+
+
+
+  // let x = new ContaBancaria() 
+  // let y = new ContaBancaria() 
+
+  // document.write(`Saldo atual R$ ${x.consultarSaldo()}` + '<br>')
+  // x.depositar(450)
+  // document.write(`Saldo Atual R$ ${x.consultarSaldo()}` + '<br>')
+  // x.sacar(200)
+  // document.write(`Saldo Atual R$ ${x.consultarSaldo()}` + '<br/>')
+
+  // document.write(y.consultarSaldo())
+
+
+
+  class CadastroUsuario {
+
+   constructor() {
+    this.nome = prompt('Informe o nome: ')
+    this.matricula = prompt('Informe a matricula: ')
+    this.login = prompt('Informe o login: ')
+    this.filial = prompt('Informe a filial: ')
+   }
+
+   cadNome() {
+    return this.nome
+   }
+
+   cadMatricula() {
+    return this.matricula
+   }
+
+   cadLogin() {
+    return this.login
+   }
+
+   cadFilial() {
+    return this.filial
+   }
+
+  }
+
+  let user1 = new CadastroUsuario()
+  let user2 = new CadastroUsuario()
+
+  document.write(`Nome do Usuário: ${user1.cadNome()}` + '<br/>')
+  document.write(`Matricula do Usuário: ${user1.cadMatricula()}` + '<br/>')
+  document.write(`Login do Usuário: ${user1.cadLogin()}` + '<br/>')
+  document.write(`Filial do Usuário: ${user1.cadFilial()}` + '<br/><br/><br/>')
+
+  document.write(`Nome do Usuário: ${user2.cadNome()}` + '<br/>')
+  document.write(`Matricula do Usuário: ${user2.cadMatricula()}` + '<br/>')
+  document.write(`Login do Usuário: ${user2.cadLogin()}` + '<br/>')
+  document.write(`Filial do Usuário: ${user2.cadFilial()}` + '<br/><br/><br/>')
+
+
+ </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
