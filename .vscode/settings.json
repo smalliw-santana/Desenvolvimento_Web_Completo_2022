@@ -1,5 +1,5 @@
 {
- "editor.fontFamily": "'JetBrainsMono Light', 'Cascadia Code', 'Droid Sans Mono', 'monospace', monospace",
- "editor.fontSize": 17,
+ "editor.fontFamily": "'JetBrains Mono Light', 'Cascadia Code', 'Droid Sans Mono', 'monospace', monospace",
+ "editor.fontSize": 16,
  "editor.tabSize": 1
 }
