@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+<script>
+
+// let quadrado = function(x = 5){
+//  return x * x
+// }
+
+// document.write(quadrado(3))
+
+//arrow function
+// let quadrado = x => x * x
+
+// document.write(quadrado(8))
+
+// let parOuImpar = function (numero){
+//  if(numero % 2 === 0){
+//   return('PAR')
+//  }else{
+//   return('IMPAR')
+//  }
+// } 
+
+// document.write(parOuImpar(7))
+
+//arrow function
+let calculo = (nome, dtNasc) => 2023 - dtNasc 
+let nome = prompt('Digite seu nome: ')
+let dtNasc = parseInt(prompt('Digite seu ano de nascimento: '))
+
+console.log(calculo(nome, dtNasc));
+
+document.write(`Olá ${nome}, sua idade atual é: ${calculo(nome, dtNasc)} anos de idade.`)
+
+// document.write(`Olá ${nome}, sua idade atual é: ${calculo()}`)
+
+// let parOuImpar = numero => numero % 2 === 0 ? 'PAR' : 'IMPAR' //retorno implicito
+
+// document.write(parOuImpar(7))
+
+
+</script>
+
+</head>
+<body>
+ 
+</body>
+</html>
