@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+
+ <script>
+
+  class Tv {
+   constructor() {
+    this._relacaoCanais = Array(2, 4, 5, 7, 10)
+    this._canaisAtivo = 5
+    this._valume = 5
+   }
+
+
+   //getters e setters 
+
+   get canaisAtivo() {
+    return this._canaisAtivo
+   }
+
+   set canaisAtivo(canal) {
+    if (this._relacaoCanais.indexOf(canal) !== -1) {
+     this._canaisAtivo = canal
+    }
+   }
+  }
+
+
+  let tv = new Tv()
+
+  tv.canaisAtivo = 7
+  console.log(tv.canaisAtivo);
+
+ </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
